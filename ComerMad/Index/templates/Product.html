@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Chapas Castilla La Mancha</title>
+    <link rel="stylesheet" href="{% static 'Index/Products.css' %}">
+	<script src="{% static 'Index/Products.js' %}" defer></script>
+</head>
+<body>
+<nav>
+<div id="MenuHamburger">
+<span class="MenuSpan"></span>
+<span class="MenuSpan"></span>
+<span class="MenuSpan"></span>
+
+</div>
+<a href="/" id="home"><h1 >COMER<spam id="font-h1">MAD</spam></h1></a>
+<h1 id=" ">{{nombre}}</h1>
+</nav>
+
+<section class="menuFlotante">
+<form method="get" id="FormularioFiltros">
+	<label for="Categoria"> Filtros</label>
+	<input type="radio" value="Frisse" name="categoria" id="Frisse">
+	<label for="Frisse">Frisse</label>
+	<input type="radio" value="Cuchilla" name="categoria" id="Cuchilla"	>
+        <label for="Cuchilla">Golpe de Cuchilla</label>
+    <input type="radio" value={{id_chapa}} name="categoria" id="All">
+        <label for="All">Todas las  {{nombre}}</label>
+	<input type="submit" value="Buscar">
+</form>
+
+</section>
+<section>
+		{% for myproduct in product %}
+		<div class="conatainer_main">
+			<div class="property-img">
+				<img class="Imagen_Prodcutos" src="../../media/{{myproduct.imagen}}" alt="{{myproduct.name}}" >
+			</img>
+		
+			</div>
+			<div class="property-content">
+			  <h2 class="property-heading">{{myproduct.name}}</h2>
+			</div>
+		</div>
+
+		{% endfor %}
+</section>
+
+</body>
+</html>

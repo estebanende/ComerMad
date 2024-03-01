@@ -1,0 +1,98 @@
+body{
+    background-color: bisque;
+    height: 100vh;
+
+}
+
+header{
+    height: min-content;
+     width: 100%;
+     display:  flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+     background-color: #222725;
+     }
+
+     
+header h1{
+    width: 40%;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    color: #f7f7f2;
+    }
+    #font-h1{
+        color: #899878;
+        }
+    
+    header nav{
+        width: 58%;
+        background-color: #222725;
+    
+    }
+    
+    header nav ul{
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+       list-style: none;
+       align-items: center;
+    
+    }
+    
+    header li{
+        margin: 0 0.5rem;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        background-color: #899878;
+        transition: background-color 0.3s;
+    }
+    
+    header li a{
+        text-decoration: none;
+        color: #f7f7f2;
+    }
+    
+    header li:hover{
+        background-color: #e4e6c3;
+    }
+    #img-menu{
+        display: none;
+    }
+
+section{
+    margin-top: 1rem;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    background-color: aquamarine
+}
+
+.img-headerProduct{
+    grid-column: 1/2;
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.img-headerProduct img{
+    width: 50%;
+    padding: 3rem;
+    border-radius:70px ;
+    height: 30%;
+}
+
+.Header-Product{
+    padding-left: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 10px;
+}
+.Header-Product h1{
+text-align: center;
+    width: 100%;
+   height: fit-content;
+  
+} 

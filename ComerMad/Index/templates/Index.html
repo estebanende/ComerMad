@@ -1,0 +1,200 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Chapas Castilla La Mancha</title>
+    <link rel="stylesheet" href="{% static 'Index/style.css' %}">
+    <script src="{% static 'Index/myfirst.js' %}" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>COMER<spam id="font-h1">MAD</spam>
+        </h1>
+
+        <nav>
+            <img id="img-menu" src="../static/Index/img/more.png"></img>
+            <ul id="menu-list">
+                <a href="#inicio"><li>Servicios</li></a>
+                <a href="#productos"> <li>Productos</li></a>
+                <a href="#contacto"> <li>Contacto</li></a>
+            </ul>
+        </nav>
+
+        <div id="img-header">
+            <h2>Aqui va nuestras letras y titulos </h2>
+            <h3>subtitulo</h3>
+        </div>
+
+    </header>
+
+    <main>
+        <article id="inicio">
+
+            <section id="PresentationText" class="BodySection">
+                <h1 class="intro-heading">Introducción a
+                    <link>Comermad</link>
+                </h1>
+                <p class="intro-text">Bienvenido a
+                    <link>Comermad</link>, su socio de confianza en el sector de la chapa y el asesoramiento para
+                    proyectos de madera.
+                </p>
+                <h2>Sobre Nosotros</h2>
+                <p>Llevamos más de 40 años ofreciendo nuestros servicios especializados en el sector de la chapa.
+                    Nuestra amplia experiencia nos ha posicionado como líderes en la industria, brindando asesoramiento
+                    experto y soluciones innovadoras para proyectos de todo tipo.</p>
+                <h2>Nuestro Compromiso</h2>
+                <p>En cada proyecto, nos comprometemos a proporcionar productos de la más alta calidad y un
+                    asesoramiento personalizado que se adapta a las necesidades específicas de nuestros clientes. Nos
+                    enorgullecemos de nuestra dedicación a la excelencia y de nuestra capacidad para ofrecer resultados
+                    excepcionales en cada colaboración.</p>
+                <h2>¿Por Qué Elegirnos?</h2>
+                <p>Al elegir
+                    <link>Comermad</link>, elige la experiencia, la calidad y el compromiso. Nuestro equipo está aquí
+                    para ayudarlo a alcanzar sus objetivos, brindándole soluciones de chapa confiables y eficientes que
+                    superarán sus expectativas.
+                </p>
+                <p>Descubra todo lo que podemos hacer por usted y su proyecto. ¡Bienvenido a la excelencia en chapa,
+                    bienvenido a
+                    <link>Comermad</link>!
+                </p>
+
+            </section>
+
+            <section class="BodySection" id="servicios">
+                <h1>Explora nuestra selección de chapas y servicios.</h1>
+
+
+                <div class="element-services">
+                    <h2><span> Cosido de Chapa                   </span></h2>
+
+                </div>
+                <div class="element-services">
+                    <h2><span>Rechapado </span></h2>
+
+                </div>
+
+                <div class="element-services">
+                    <h2><span>Asesoría en proyectos</span></h2>
+
+                </div>
+                <div class="element-services">
+                    <h2><span>tablón de diferentes especies y gruesos</span></h2>
+
+                  
+                </div>
+            </section>
+
+        </article>
+
+     
+
+
+        
+        <section id="productos" class="BodySection">
+            <h2>Nuestros Productos</h2>
+            <div class="card-producto" id="Naturales">
+                <a href="Product.html/1">
+                    <h3>Chapa Naturales</h3>
+                <div class="text">
+                    <p>Saber más</p>
+                </div>
+            </a>
+            </div>
+            <div class="card-producto" id="Tintadas">
+                <a href="Product.html/2">
+
+                    <h3>Chapa Tintadas</h3>
+                <div class="text">
+                    
+                    <p>Saber más</p>
+                </div>
+            </a>
+            </div>
+            <div class="card-producto" id="Prefabricadas">
+                <a href="Product.html/3">
+                    <h3>Chapa Prefabricadas</h3>
+                <div class="text">
+                    
+                    <p>Saber más</p>
+                </div>
+            </a>
+            </div>
+            <!-- Agrega más productos según sea necesario -->
+        </section>
+
+        <section class="Proyectos">
+            <div>
+                <h1>Proyectos Realizados con nuestras chapas</h1>
+            
+            
+            </div>
+            
+
+            <div class="Carrusel-Proyectos" data-infinite="true" data-autoselect="false" data-manual-select="true" data-manual-multiple-select="false">
+                
+                    <div class="carousel__slide a active">
+                      <img src="../static/Index/img/Header_menu.jpg" alt=""/>
+                    </div>
+                    <div class="carousel__slide b">
+                       <img src="../static/Index/img/Casa de Roble.jpeg" alt=""/>
+                    </div>
+                    <div class="carousel__slide c">
+                       <img src="../static/Index/img/Cocina.jpeg" alt=""/>
+                    </div>
+                    <div class="carousel__slide d">
+                        <img src="../static/Index/img/Roble Rustico Alistonado.jpeg" alt=""/>
+                    </div>
+                    <div class="carousel__slide e">
+                       <img src="../static/Index/img/Roble Rustico alistonado 2.jpeg" alt=""/>
+                    </div>
+                
+        </div>
+
+
+
+
+        </section>
+
+        <section id="contacto" class="BodySection">
+
+            <h2>Métodos de contacto</h2>
+            <section id="contactos-fomrs">
+                <article>
+                    
+                    <p>Si necesita más información acerca de nuestros productos o de nuestra empresa, ponte en contacto con
+                        nosotros a través de:</p>
+                    <ul id="Contacto-lista">
+                        
+                        <li>Calle Cramaelos Números 2 , <span>Toledo La villa de don Fradrique</span> </li>
+                        <li>+34 675891336</li>
+                        <li>estebanignaci6@gmail.com</li>
+                        <li>Instagram</li>
+                    </ul>
+                </article>
+                <article>
+                    <fieldset>
+                        <legend>Envía correo de Contacto</legend>
+
+                    
+                    <form id="formulario" action="{%url 'sendMail' %}" method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                        <input type="submit">
+                    </form>
+                </fieldset>
+                </article>
+        </section>
+    </section>
+    </main>
+
+    <footer>
+        <p> @ 2023 Tienda de Chapas</p>
+    </footer>
+</body>
+
+</html>

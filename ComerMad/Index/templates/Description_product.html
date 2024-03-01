@@ -1,0 +1,44 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="{% static 'Index/description.css' %}">
+
+
+</head>
+<body>
+    <header>
+        <h1>COMER<spam id="font-h1">MAD</spam>
+        </h1>
+
+        <nav>
+            <img id="img-menu" src="../static/Index/img/more.png"></img>
+            <ul id="menu-list">
+                <a href="#inicio"><li>Servicios</li></a>
+                <a href="#productos"> <li>Productos</li></a>
+                <a href="#contacto"> <li>Contacto</li></a>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section>
+        <div class="img-headerProduct">
+                <img src="../../media/{{ChappaFind.imagen}}" alt="{{ChappaFind.name}}" >
+
+        </div>
+        <div class="Header-Product">
+            <h1>{{ChappaFind.name}}</h1>
+            <p>{{ChappaFind.description}}</p>
+        </div>
+    </section>
+    
+</body>
+</html>

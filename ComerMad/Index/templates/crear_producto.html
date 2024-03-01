@@ -1,0 +1,15 @@
+{% if messages %}
+    {% for message in messages %}
+        <div class="row">
+           <div class="alert {% if message.tags == "success" %}alert-success {% else %}alert-danger{% endif %} alert-dismissible" role="alert">
+              <button class="close" aria-label="close" data-dismiss="alert" type="button"><span aria-hidden="true">x</span></button>
+               <p>{{ message|safe }}</p>
+          </div>
+        </div>
+    {% endfor %}
+{% endif %}
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Guardar Producto</button>
+</form>
